@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html class="catalog" lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
     <title>Подбор программы</title>
-    <link href="../source/css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body class="catalog__body">
+  <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="../source/img/logotype-mobile.svg" width="33" height="37" alt="Логотип Cat Energy">
+        <img class="main-header__logo-image" src="img/logotype-mobile.svg" width="33" height="37" alt="Логотип Cat Energy">
       </a>
       <a class="main-header__logo-title" href="index.html">
-        <img class="main-header__logo-image-title" src="../source/img/logotype-mobile-title.svg" width="101" height="18" alt="Cat Energy">
+        <img class="main-header__logo-image-title" src="img/logotype-mobile-title.svg" width="101" height="18" alt="Cat Energy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="main-nav__item">
-              <a href="index.html">
+              <a class="main-nav__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">
+              <a class="main-nav__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="main-nav__item main-nav__item--current">
-              <a href="form.html">
+              <a class="main-nav__link" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -52,21 +53,21 @@
             <span class="program__label">
               <label class="program__label" for="form-name-cat">ИМЯ:<sup>*<sup></label>
             </span>
-            <input class="program__field-name-cat" type="text" id="form-name-cat" name="form-name-cat" placeholder="БАРСИК" required>
+            <input class="program__field-name-cat program__field" type="text" id="form-name-cat" name="form-name-cat" placeholder="БАРСИК" required>
           </p>
 
           <p class="program__field-group program__form-weight-cat">
             <span class="program__label">
               <label class="program__label" for="form-weight-cat">ВЕС (КГ):<sup>*<sup></label>
             </span>
-            <input class="program__field-weight-cat" type="text" id="form-weight-cat" name="form-weight-cat" placeholder="7" required>
+            <input class="program__field-weight-cat program__field" type="text" id="form-weight-cat" name="form-weight-cat" placeholder="7" required>
           </p>
 
           <p class="program__field-group program__form-age-cat">
             <span class="program__label">
               <label class="program__label" for="form-age-cat">ВОЗРАСТ (ЛЕТ):</label>
             </span>
-            <input class="program__field-age-cat" type="text" id="form-age-cat" name="form-age-cat" placeholder="7">
+            <input class="program__field-age-cat program__field" type="text" id="form-age-cat" name="form-age-cat" placeholder="7">
           </p>
 
           <fieldset class="program__field-group program__filter-group">
@@ -97,48 +98,48 @@
           </fieldset>
 
           <fieldset class="program__field-group program__contacts">
-            <legend class="program__contacts-title program__contacts-title--line">Контактные данные (владельца кота)</legend>
+            <legend class="program__field-group-title program__field-group-title--line">Контактные данные (владельца кота)</legend>
             <p class="program__field-group program__contacts-email">
               <span class="program__label">
-                <label class="program__label" for="form-email">E-MAILl:<sup>*</sup></label>
+                <label class="program__label" for="form-email">E-MAIL:<sup>*</sup></label>
               </span>
-              <input class="program__field-email program__field-email--envelope" type="text" id="form-email" name="form-email" placeholder="kuklachev@gmail.com">
+              <input class="program__field-email program__field program__field-email--envelope" type="text" id="form-email" name="form-email" placeholder="kuklachev@gmail.com">
             </p>
             <p class="program__field-group program__contacts-tel">
               <span class="program__label">
                 <label class="program__label" for="form-tel">Телефон:<sup>*</sup></label>
               </span>
-              <input class="program__field-tel program__field-tel--telephone" type="text" id="form-tel" name="form-tel" placeholder="8 (960) 900-60-90">
+              <input class="program__field-tel program__field program__field-tel--telephone" type="text" id="form-tel" name="form-tel" placeholder="8 (960) 900-60-90">
             </p>
           </fieldset>
 
           <p class="program__field-group program__comment">
-            <span class="program__comment-title program__comment-title--line">Комментарий</span>
-            <textarea name="comment" id="comment-field" rows="7">Расскажите обо всех повадках кота</textarea>
+            <span class="program__field-group-title program__field-group-title--line">Комментарий</span>
+            <textarea class="program__comment-text program__field" name="comment" id="comment-field" rows="7">Расскажите обо всех повадках кота</textarea>
           </p>
 
           <fieldset class="program__filter-group filter-group">
-            <legend class="program__filter-title program__filter-title--line">Дополнительно:</legend>
+            <legend class="program__field-group-title program__field-group-title--line">Дополнительно:</legend>
             <ul class="program__filter-list">
               <li class="program__filter-item">
                 <label class="program__filter-control">
                   <input class="visually-hidden program__filter-control-input" type="checkbox" name="sweetener" checked>
                   <span class="program__control-mark"></span>
-                  <span class="program__control-label">Сахарозаменитель</span>
+                  <span class="program__control-label program__control-extra">Сахарозаменитель</span>
                 </label>
               </li>
               <li class="program__filter-item">
                 <label class="program__filter-control">
                   <input class="visually-hidden program__filter-control-input" type="checkbox" name="water">
                   <span class="program__control-mark"></span>
-                  <span class="program__control-label">Питьевая вода</span>
+                  <span class="program__control-label program__control-extra">Питьевая вода</span>
                 </label>
               </li>
               <li class="program__filter-item">
                 <label class="program__filter-control">
                   <input class="visually-hidden program__filter-control-input" type="checkbox" name="milk">
                   <span class="program__control-mark"></span>
-                  <span class="program__control-label">Молоко</span>
+                  <span class="program__control-label program__control-extra">Молоко</span>
                 </label>
               </li>
               <li class="program__filter-item">
@@ -165,7 +166,7 @@
             <address class="contacts__address">ул. Большая<br>Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
           </div>
           <div class="contacts__map">
-            <img src="../source/img/map.png" width="320" height="362" alt="Карта с нашим местонахождением">
+            <img src="img/map.png" width="320" height="362" alt="Карта с нашим местонахождением">
           </div>
         </div>
       </section>
@@ -176,7 +177,7 @@
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
           <a class="main-footer__logo-link" href="index.html">
-            <img class="main-footer__logo-image-title" src="../source/img/logotype-mobile-title-footer.svg" width="128" height="24" alt="Cat Energy">
+            <img class="main-footer__logo-image-title" src="img/logotype-mobile-title-footer.svg" width="128" height="24" alt="Cat Energy">
           </a>
         </div>
         <div class="main-footer__social social">
@@ -194,10 +195,10 @@
         </div>
         <div class="main-footer__copyright copyright">
           <a class="copyright__link-title" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__logo-title" src="../source/img/html-academy.svg" width="114" height="18" alt="HTML Acadevy">
+            HTML Academy
           </a>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__logo" src="../source/img/html-academy-logo.svg" width="27" height="34" alt="Логотип HTML Acadevy">
+            <img class="copyright__logo" src="img/html-academy-logo.svg" width="27" height="34" alt="HTML Academy">
           </a>
         </div>
       </div>
