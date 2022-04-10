@@ -1,0 +1,401 @@
+.main-header {
+  margin: 0 auto;
+  padding: 11px 0 17px;
+}
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.main-nav__link {
+  color: #000000;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/oswaldregular.woff2") format("woff2"), url("../../fonts/oswaldregular.woff") format("woff");
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/oswaldmedium.woff2") format("woff2"), url("../../fonts/oswaldmedium.woff") format("woff");
+}
+.page {
+  height: 100%;
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 18px;
+  background-color: #ffffff;
+}
+.page__body {
+  min-height: 100%;
+  min-width: 320px;
+  margin: 0;
+  background-color: #ffffff;
+  color: #444444;
+}
+.button {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  background-color: #68b738;
+  border: none;
+  width: 280px;
+  cursor: pointer;
+}
+.contacts__invites {
+  padding: 26px 0 ;
+}
+.contacts__invite {
+  display: inline-block;
+  margin: 0;
+  color: #111111;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.contacts__address {
+  display: inline-block;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.copyright__link-title {
+  color: #444444;
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.example {
+  margin: 0 auto;
+  background-color: #eaeaea;
+  padding: 25px 20px 40px;
+}
+.example__title {
+  margin: 0;
+  color: #000000;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+.example__result {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.example__result-total {
+  display: inline-block;
+  margin: 0;
+  color: #000000;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.example__note {
+  display: block;
+  color: #444444;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+}
+.example__result-cost {
+  margin: 0;
+  color: #000000;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.main__title {
+  margin: 0;
+  padding-top: 27px;
+  color: #000000;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+.main-footer {
+  background-color: #f2f2f2;
+  padding: 29px 0 22px;
+}
+.social__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.present {
+  padding: 35px 0;
+  min-height: 289px;
+  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/present-bg.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 280px 289px, 280px 289px;
+}
+.present__proviso {
+  font-family: "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.principle {
+  padding: 20px 0 50px;
+}
+.principle__description {
+  color: #000000;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin: 0;
+}
+.principle__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.principle__description-item {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+.product-card {
+  padding: 19px 0 25px;
+}
+.product-card__title {
+  color: #222222;
+  font-size: 16px;
+  line-height: 20px;
+}
+.product-card__list {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.product__button {
+  font-size: 16px;
+  line-height: 20px;
+}
+.product-extra__title {
+  margin: 0;
+  padding: 25px 0 36px;
+  color: #000000;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.product-extra__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.product-extra__item {
+  padding: 13px 0 19px;
+}
+.product-extra__item-title {
+  margin: 0;
+  text-transform: uppercase;
+  color: #222222;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.product-extra-content__item {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+}
+.product-extra__button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.product {
+  padding: 41px 0 25px;
+}
+.product__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.product__more-value {
+  text-transform: uppercase;
+  color: #111111;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.product__more-note {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.product__more-button {
+  display: block;
+  color: #444444;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  background-color: #f2f2f2;
+}
+.program-selection__wrapper {
+  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/program-selection-bg-image.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 320px 302px, 320px 302px;
+}
+.program-selection__title {
+  margin: 0;
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+.program-selection__slogan {
+  margin: 0;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 302px;
+}
+.program-selection__general-slogan {
+  position: relative;
+  padding-top: 27px;
+  padding-bottom: 3px;
+}
+.program-selection__image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.program-selection__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.program-selection__item {
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.program-selection__item:last-child {
+  margin-bottom: 20px;
+}
+.program-selection__target {
+  color: #000000;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+}
+.program-selection__problem {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.program-selection__button-target {
+  padding: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #000000;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.program__act {
+  margin: 0;
+  padding: 37px 0 39px;
+  color: #000000;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.program__label {
+  text-transform: uppercase;
+}
+.program__field {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #444444;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.program__field-group-title {
+  color: #000000;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.program__filter-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.program__control-label {
+  text-transform: uppercase;
+  color: #222222;
+}
+.program__control-extra {
+  color: #000000;
+}
+.program__button {
+  font-size: 16px;
+  line-height: 20px;
+}
+.program__note {
+  display: block;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.slider__toggle {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */
