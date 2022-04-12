@@ -1,8 +1,38 @@
 .main-footer {
+  margin: 0 auto;
   background-color: #f2f2f2;
-  padding: 29px 0 22px
+  width: 320px;
+  min-height: 236px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    min-height: 147px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
+}
+
+.main-footer__wrapper {
+  padding: 39px 20px 22px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 58px 30px 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 57px 110px 58px;
+  }
 }
 
 .social__list {
   .list-style();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
