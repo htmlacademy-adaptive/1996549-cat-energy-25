@@ -1,17 +1,66 @@
 .present {
-  padding: 35px 0;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    margin: 0;
+    padding: 0;
+    padding-left: 79px;
+  }
+}
+
+.present__wrapper {
   min-height: 289px;
   background-image:
     linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     url("../../img/present-bg.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-size: 280px 289px, 280px 289px;
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    min-height: 199px;
+    background-image:
+      linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../../img/present-bg-tab.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 289px;
+    background-image:
+      linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../../img/present-bg.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+  }
 }
 
 .present__proviso {
+  padding-top: 186px;
+  padding-bottom: 43px;
   font-family: "Arial", sans-serif;
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    vertical-align: middle;
+    padding: 71px 124px 69px 422px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 184px 0 42px;
+  }
 }
