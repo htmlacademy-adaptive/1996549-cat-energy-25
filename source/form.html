@@ -49,56 +49,57 @@
         <p class="program__act">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
 
         <form class="program__form" action="https://echo.htmlacademy.ru/" method="get">
-          <p class="program__field-group program__form-name-cat">
-            <span class="program__label">
-              <label class="program__label" for="form-name-cat">ИМЯ:<sup>*<sup></label>
-            </span>
-            <input class="program__field-name-cat program__field" type="text" id="form-name-cat" name="form-name-cat" placeholder="БАРСИК" required>
-          </p>
+          <div class="program__form-wrapper">
+            <div class="program__filter-info-wrapper">
+              <p class="program__field-group program__form-name-cat">
+                <span class="program__label">
+                  <label class="program__label" for="form-name-cat">ИМЯ:<sup>*<sup></label>
+                </span>
+                <input class="program__field-name-cat program__field" type="text" id="form-name-cat" name="form-name-cat" placeholder="БАРСИК" required>
+              </p>
+              <p class="program__field-group program__form-weight-cat">
+                <span class="program__label">
+                  <label class="program__label" for="form-weight-cat">ВЕС (КГ):<sup>*<sup></label>
+                </span>
+                <input class="program__field-weight-cat program__field" type="text" id="form-weight-cat" name="form-weight-cat" placeholder="7" required>
+              </p>
+              <p class="program__field-group program__form-age-cat">
+                <span class="program__label">
+                  <label class="program__label" for="form-age-cat">ВОЗРАСТ (ЛЕТ):</label>
+                </span>
+                <input class="program__field-age-cat program__field" type="text" id="form-age-cat" name="form-age-cat" placeholder="7">
+              </p>
+            </div>
+            <fieldset class="program__field-group program__filter-group">
+              <legend class="visually-hidden">Цель программы</legend>
+              <ul class="program__filter-list program__filter-list-radio">
+                <li class="program__filter-item">
+                  <label class="program__filter-control">
+                    <input class="visually-hidden program__filter-control-input" type="radio" name="program-aim" value="weight-loss" checked>
+                    <span class="program__control-mark"></span>
+                    <span class="program__control-label">Похудение</span>
+                  </label>
+                </li>
+                <li class="program__filter-item">
+                  <label class="program__filter-control">
+                    <input class="visually-hidden program__filter-control-input" type="radio" name="program-aim" value="Weight-gain">
+                    <span class="program__control-mark"></span>
+                    <span class="program__control-label">Набор массы</span>
+                  </label>
+                </li>
+                <li class="program__filter-item">
+                  <label class="program__filter-control">
+                    <input class="visually-hidden program__filter-control-input" type="radio" name="program-aim" value="recomendation">
+                    <span class="program__control-mark"></span>
+                    <span class="program__control-label">Похудение</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
-          <p class="program__field-group program__form-weight-cat">
-            <span class="program__label">
-              <label class="program__label" for="form-weight-cat">ВЕС (КГ):<sup>*<sup></label>
-            </span>
-            <input class="program__field-weight-cat program__field" type="text" id="form-weight-cat" name="form-weight-cat" placeholder="7" required>
-          </p>
-
-          <p class="program__field-group program__form-age-cat">
-            <span class="program__label">
-              <label class="program__label" for="form-age-cat">ВОЗРАСТ (ЛЕТ):</label>
-            </span>
-            <input class="program__field-age-cat program__field" type="text" id="form-age-cat" name="form-age-cat" placeholder="7">
-          </p>
-
-          <fieldset class="program__field-group program__filter-group">
-            <legend class="visually-hidden">Цель программы</legend>
-            <ul class="program__filter-list">
-              <li class="program__filter-item">
-                <label class="program__filter-control">
-                  <input class="visually-hidden program__filter-control-input" type="radio" name="program-aim" value="weight-loss" checked>
-                  <span class="program__control-mark"></span>
-                  <span class="program__control-label">Похудение</span>
-                </label>
-              </li>
-              <li class="program__filter-item">
-                <label class="program__filter-control">
-                  <input class="visually-hidden program__filter-control-input" type="radio" name="program-aim" value="Weight-gain">
-                  <span class="program__control-mark"></span>
-                  <span class="program__control-label">Набор массы</span>
-                </label>
-              </li>
-              <li class="program__filter-item">
-                <label class="program__filter-control">
-                  <input class="visually-hidden program__filter-control-input" type="radio" name="program-aim" value="recomendation">
-                  <span class="program__control-mark"></span>
-                  <span class="program__control-label">Похудение</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="program__field-group program__contacts">
-            <legend class="program__field-group-title program__field-group-title--line">Контактные данные (владельца кота)</legend>
+          <p class="program__field-group program__contacts">
+            <span class="program__field-group-title program__field-group-title--line">Контактные данные (владельца кота)</span>
             <p class="program__field-group program__contacts-email">
               <span class="program__label">
                 <label class="program__label" for="form-email">E-MAIL:<sup>*</sup></label>
@@ -111,7 +112,7 @@
               </span>
               <input class="program__field-tel program__field program__field-tel--telephone" type="text" id="form-tel" name="form-tel" placeholder="8 (960) 900-60-90">
             </p>
-          </fieldset>
+          </p>
 
           <p class="program__field-group program__comment">
             <span class="program__field-group-title program__field-group-title--line">Комментарий</span>
@@ -120,7 +121,7 @@
 
           <fieldset class="program__filter-group filter-group">
             <legend class="program__field-group-title program__field-group-title--line">Дополнительно:</legend>
-            <ul class="program__filter-list">
+            <ul class="program__filter-list program__filter-list-checkbox">
               <li class="program__filter-item">
                 <label class="program__filter-control">
                   <input class="visually-hidden program__filter-control-input" type="checkbox" name="sweetener" checked>
@@ -150,10 +151,11 @@
                 </label>
               </li>
             </ul>
+            <div class="program__button-wrapper">
+              <button class="program__button button" type="submit">Отправить заявку</button>
+              <span class="program__note"><sup>*</sup> — Обязательные поля</span>
+            </div>
           </fieldset>
-
-          <button class="program__button button" type="submit">Отправить заявку</button>
-          <span class="program__note"><sup>*</sup> — Обязательные поля</span>
 
         </form>
       </section>
@@ -166,7 +168,7 @@
             <address class="contacts__address">ул. Большая<br>Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
           </div>
           <div class="contacts__map">
-            <img src="img/map.png" width="320" height="362" alt="Карта с нашим местонахождением">
+            <img class="contacts__map-image" src="img/map.png" width="320" height="362" alt="Карта с нашим местонахождением">
           </div>
         </div>
       </section>

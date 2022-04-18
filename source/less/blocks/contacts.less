@@ -31,6 +31,7 @@
     width: 565px;
     min-height: 198px;
     box-sizing: border-box;
+    padding: 56px 0;
   }
 }
 
@@ -47,6 +48,11 @@
     font-size: 20px;
     line-height: 26px;
     width: 100%;
+    padding-left: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 80px;
   }
 }
 
@@ -57,15 +63,27 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+  text-align: right;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
     width: 159px;
+    padding-right: 40px;
+    margin-left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding-right: 80px;
   }
 }
 
 .contacts__map-image {
+  display: block;
+  padding: 0;
+  margin: 0;
+
   @media (min-width: @desktop-width) {
     display: none;
   }
