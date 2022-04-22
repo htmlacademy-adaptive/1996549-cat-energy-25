@@ -5,7 +5,7 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    width: 708px;
     background-image: url("../img/program-selection-image_bg.jpg");
     background-repeat: no-repeat;
     padding: 0 30px;
@@ -13,14 +13,14 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1440px;
+    width: 1220px;
     padding: 0 110px;
     background-image:
       url("../img/program-selection-image_bg-desktop.png"),
       url("../img/program-selection-bg-image_desktop.jpg");
     background-repeat: no-repeat;
-    background-position-x: 40%, 70%;
-    background-position-y: 20%, 0%;
+    background-position-x: 60%, 100%;
+    background-position-y: 0%, 0%;
   }
 }
 
@@ -55,6 +55,11 @@
     margin-bottom: 41px;
     margin-left: 89px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 111px;
+    margin-left: 80px;
+  }
 }
 
 .program-selection__slogan {
@@ -73,10 +78,16 @@
     margin-bottom: 49px;
     margin-left: 89px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .program-selection__button {
   @media (min-width: @tablet-width) {
+    width: 244px;
+    padding: 14px 10px;
     margin-bottom: 526px;
     margin-left: 89px;
     font-size: 20px;
@@ -113,21 +124,36 @@
 }
 
 .program-selection__item {
+  margin: 0 20px;
   margin-top: 20px;
   background-color: #f2f2f2;
   padding: 20px;
+  padding-top: 30px;
   padding-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 77px 52px 28px;
+    width: 708px;
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 30px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 570px;
     min-height: 354px;
-    padding: 41px 51px 55px 52px;
+    padding: 77px 51px 56px 52px;
     box-sizing: border-box;
+    margin: 0;
   }
 }
 
 .program-selection__item:last-child {
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 45px;
+  }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
@@ -136,20 +162,85 @@
 }
 
 .program-selection__target {
+  position: relative;
   color: #000000;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
+  margin-left: 71px;
+  margin-bottom: 29px;
+
+  &--slim::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/slim-image.svg");
+    background-repeat: no-repeat;
+    top: -7px;
+    left: -69px;
+    width: 50px;
+    height: 53px;
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/slim-image_tab.svg");
+      width: 200px;
+      height: 211px;
+      top: 0;
+      left: 390px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/slim-image_desk.svg");
+      width: 100px;
+      height: 106px;
+      top: -36px;
+      left: -168px;
+    }
+  }
+
+  &--weight::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/weight-image.svg");
+    background-repeat: no-repeat;
+    top: -7px;
+    left: -78px;
+    width: 67px;
+    height: 50px;
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/weight-image_tab.svg");
+      width: 268px;
+      height: 200px;
+      top: 0;
+      left: 350px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/weight-image_desk.svg");
+      width: 134px;
+      height: 100px;
+      top: -36px;
+      left: -181px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 24px;
+    margin-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 73px;
+    margin-left: 162px;
   }
 }
 
 .program-selection__problem {
   margin: 0;
+  padding-bottom: 23px;
+  width: 240px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -158,24 +249,44 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    width: 340px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    padding-bottom: 16px;
   }
 }
 
 .program-selection__button-target {
-  padding: 20px;
+  padding: 19px;
   padding-left: 0;
+  width: 240px;
   font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+  text-align: left;
   text-transform: uppercase;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  border-top: 1px solid #b9b9b9;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    border: none;
+    padding: 25px;
+    padding-left: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 7px;
+  }
+}
+
+.program-selection__button-icon {
+  margin-left: 15px;
 }

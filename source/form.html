@@ -8,34 +8,36 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="img/logotype-mobile.svg" width="33" height="37" alt="Логотип Cat Energy">
-      </a>
-      <a class="main-header__logo-title" href="index.html">
-        <img class="main-header__logo-image-title" src="img/logotype-mobile-title.svg" width="101" height="18" alt="Cat Energy">
-      </a>
-      <nav class="main-nav">
-        <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-header__wrapper">
+        <a class="main-header__logo" href="index.html">
+          <img class="main-header__logo-image" src="img/logotype-mobile.svg" width="33" height="37" alt="Логотип Cat Energy">
+        </a>
+        <a class="main-header__logo-title" href="index.html">
+          <img class="main-header__logo-image-title" src="img/logotype-mobile-title.svg" width="101" height="18" alt="Cat Energy">
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">
                 Главная
               </a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link" href="form.html">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="form.html">
                 Подбор программы
               </a>
             </li>
           </ul>
         </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main class="main-container">
@@ -205,6 +207,6 @@
         </div>
       </div>
     </footer>
-
+    <script src="script.js"></script>
   </body>
 </html>
