@@ -144,14 +144,42 @@
   &--active {
     position: relative;
 
-    &::after {
+    @media (min-width: @tablet-width) {
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        left: 0;
+        height: 2px;
+        background-color: #68b738;
+      }
+    }
+  }
+}
+
+.site-list__item--index-active {
+  position: relative;
+
+  &::after {
+    @media (min-width: @tablet-width) {
       content: "";
       position: absolute;
       right: 0;
       bottom: -10px;
       left: 0;
       height: 2px;
-      background: #68b738;
+      background-color: #68b738;
+    }
+
+    @media (min-width: @desktop-width) {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -10px;
+      left: 0;
+      height: 2px;
+      background-color: #ffffff;
     }
   }
 }
@@ -187,5 +215,12 @@
     color: #000000;
     padding: 0;
     border: none;
+    background-color: transparent;
+  }
+}
+
+.site-list__link--index {
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
   }
 }

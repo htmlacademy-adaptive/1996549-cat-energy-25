@@ -1,5 +1,6 @@
 .main__title {
   width: 320px;
+  box-sizing: border-box;
   margin: 0 auto;
   padding-bottom: 41px;
   padding-top: 27px;
@@ -15,10 +16,25 @@
     padding-left: 30px;
     padding-bottom: 82px;
     width: 768px;
+    padding-top: 63px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 110px;
+    padding: 73px 110px 56px;
     width: 1440px;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    border-bottom: 1px solid #ebebeb;
+  }
+}
+
+.main__title-form {
+  padding-bottom: 37px;
+  border-bottom: none;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 54px;
   }
 }
