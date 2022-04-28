@@ -1,19 +1,16 @@
 .present {
   width: 280px;
-  margin: 0 auto;
   margin-top: 35px;
-  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     width: 708px;
-    padding: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
     width: 245px;
     margin: 0;
     padding: 0;
-    padding-left: 79px;
+    padding-left: 80px;
   }
 }
 
@@ -45,6 +42,8 @@
 }
 
 .present__proviso {
+  margin: 0;
+  position: relative;
   padding-top: 186px;
   padding-bottom: 43px;
   font-family: "Arial", sans-serif;
@@ -57,10 +56,30 @@
   @media (min-width: @tablet-width) {
     vertical-align: middle;
     padding: 71px 124px 69px 422px;
+    text-align: left;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    padding: 184px 0 42px;
+    padding: 184px 43px 42px 40px;
+    text-align: center;
+  }
+}
+
+.present__proviso::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/present-image-mobile.svg");
+  top: 65px;
+  left: calc(50% - (57px / 2));
+  width: 57px;
+  height: 61px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/present-image-tablet.svg");
+    top: 63px;
+    left: 88px;
+    width: 58px;
+    height: 63px;
   }
 }

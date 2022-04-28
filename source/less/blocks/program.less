@@ -1,6 +1,5 @@
 .program {
-  width: 280px;
-  padding: 0 20px 32px;
+  width: 320px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
@@ -15,43 +14,180 @@
 }
 
 .program__form-wrapper {
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    border: none;
+    margin: 0 37px 0 41px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
+    margin: 0;
   }
 }
 
 .program__filter-info-wrapper {
+  padding: 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    padding: 0;
+  }
+
   @media (min-width: @desktop-width) {
     width: 569px;
     margin-right: 80px;
   }
 }
 
-.program__filter-list-radio {
-  @media (min-width: @desktop-width) {
-    width: 568px;
+.program__filter-item {
+  padding-left: 46px;
+  padding-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 87px;
+    padding-bottom: 23px;
   }
 }
 
 .program__field-group {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 14px;
+  align-items: baseline;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 20px;
+  }
+}
+
+.program__contacts {
+  padding: 26px 20px 9px;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    padding: 75px 39px 65px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.program__contacts .program__field-group-title {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 76px;
+  }
+}
+
+.program__contacts-email {
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
+}
+
+.program__contacts-email--envelope::after {
+  content: "";
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  background-image: url("../img/mail-icon.svg");
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 16px;
+}
+
+.program__field-email {
+  @media (min-width: @desktop-width) {
+    min-width: 486px;
+    box-sizing: border-box;
+  }
+}
+
+.program__contacts-tel {
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+    margin-left: 78px;
+  }
+}
+
+.program__contacts-tel--telephone::after {
+  content: "";
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  background-image: url("../img/tel-icon.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.program__field-tel {
+  @media (min-width: @desktop-width) {
+    min-width: 472px;
+    box-sizing: border-box;
+  }
 }
 
 .program__act {
   margin: 0;
+  padding: 0 20px;
+  padding-bottom: 29px;
   color: #000000;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 40px 66px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .program__filter-group {
-  padding: 0;
+  padding: 28px 0 0;
+  border: none;
+  margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid #e7e7e7;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
+    padding-top: 0;
+  }
 }
 
 .program__label {
   text-transform: uppercase;
+}
+
+.programm__label-star {
+  font-size: inherit;
+  font-family: "Oswald", "Arial", sans-serif;
 }
 
 .program__field {
@@ -62,26 +198,180 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+  padding: 14px;
+  margin-left: 7px;
+  border: 1px solid #e7e7e7;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 19px 11px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .program__field-group-title {
+  position: relative;
   display: block;
   color: #000000;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
+  padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+  }
+}
+
+.program__field-group-title--line::after {
+  content: "";
+  position: absolute;
+  background-color: #68b738;
+  height: 2px;
+  width: calc(100% - 181px);
+  top: 15px;
+  left: 201px;
+
+  @media (min-width: @tablet-width) {
+    left: 554px;
+    width: calc(100% - 485px);
+    top: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: calc(100% - 443px);
+  }
+}
+
+.program__field-group-title--line::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    background-color: #68b738;
+    height: 2px;
+    top: 23px;
+    width: 30px;
+    left: -69px;;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -110px;
+    width: 70px;
+  }
 }
 
 .program__comment {
+  position: relative;
+  padding: 0 20px 22px;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 39px 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 10px 67px 0;
+  }
+}
+
+.program__comment .program__field-group-title {
+  padding-bottom: 76px;
+}
+
+.program__comment .program__field-group-title--line::after {
+  content: "";
+  position: absolute;
+  background-color: #68b738;
+  height: 2px;
+  width: calc(100% - 121px);
+  top: 15px;
+  left: 143px;
+
+  @media (min-width: @tablet-width) {
+    top: 23px;
+    left: 220px;
+    width: calc(100% - 152px);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: calc(100% - 99px);
+  }
 }
 
 .program__comment-text {
-  width: 100%;
+  margin: 0;
+  width: 280px;
+  box-sizing: border-box;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 631px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.program__extra {
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.program__extra .program__field-group-title {
+  padding-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 0 57px 39px;
+    width: 622px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.program__extra .program__field-group-title--line::after {
+  content: "";
+  position: absolute;
+  background-color: #68b738;
+  height: 2px;
+  width: calc(100% - 13px);
+  top: 15px;
+  left: 164px;
+
+  @media (min-width: @tablet-width) {
+    left: 292px;
+    top: 23px;
+    width: calc(100% - 213px);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1078px;
+    left: 252px;
+  }
+}
+
+.program__extra .program__field-group-title--line::before {
+  @media (min-width: @tablet-width) {
+    left: -30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -110px;
+  }
 }
 
 .program__filter-list {
@@ -91,12 +381,31 @@
 .program__filter-list-checkbox {
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 354px 354px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 82px;
+  }
+}
+
+
+.program__filter-list-radio {
+  @media (min-width: @desktop-width) {
+    width: 568px;
+    border: 1px solid #e7e7e7;
+    padding: 30px 0 7px;
+  }
+}
+
+.program__filter-list-checkbox .program__filter-item {
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+    padding-bottom: 37px;
   }
 }
 
@@ -119,6 +428,20 @@
 .program__button {
   font-size: 16px;
   line-height: 20px;
+  margin-top: 17px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+    width: 282px;
+    padding: 13px 10px;
+    max-height: 52px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+  }
 }
 
 .program__note {
@@ -127,4 +450,18 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+  color: #000000;
+  text-align: center;
+  padding: 21px 0 32px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 40px;
+  }
 }
