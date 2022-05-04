@@ -55,6 +55,66 @@
   }
 }
 
+.program__filter-control {
+  position: relative;
+}
+
+.program__control-mark {
+  position: absolute;
+  top: -25%;
+  left: -45px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -60px;
+  }
+}
+
+.program__filter-control-input[type="checkbox"]:checked + .program__control-mark::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/check-icon.svg");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 14px;
+  top: 8px;
+  left: 6px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/check-icon-tablet.svg");
+    width: 24px;
+    height: 18px;
+    top: 11px;
+    left: 8px;
+  }
+}
+
+.program__filter-control-input[type="radio"] + .program__control-mark {
+  border-radius: 50%;
+}
+
+.program__filter-control-input[type="radio"]:checked + .program__control-mark::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #68b738;
+  top: 25%;
+  left: 8px;
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+    left: 11px;
+  }
+}
+
 .program__field-group {
   display: flex;
   flex-wrap: wrap;
@@ -252,7 +312,7 @@
     height: 2px;
     top: 23px;
     width: 30px;
-    left: -69px;;
+    left: -69px;
   }
 
   @media (min-width: @desktop-width) {
