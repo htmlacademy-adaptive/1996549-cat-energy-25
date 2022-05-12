@@ -1,6 +1,6 @@
 {
   "icons": [
-    { "src": "source/img/favicons/favicon_16x16", "type": "image/png", "sizes": "16x16" },
-    { "src": "source/img/favicons/favicon_152x152", "type": "image/png", "sizes": "512x512" }
+    { "src": "source/img/favicons/favicon-16x16.png", "type": "image/png", "sizes": "16x16" },
+    { "src": "source/img/favicons/favicon-152x152.png", "type": "image/png", "sizes": "512x512" }
   ]
 }

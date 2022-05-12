@@ -117,7 +117,7 @@ const server = (done) => {
 }
 
 // Reload
-const reload = () => {
+const reload = (done) => {
   browser.reload();
   done()
 }
