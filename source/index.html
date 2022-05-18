@@ -5,7 +5,7 @@
     <title>Cat Energy</title>
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" sizes="32x32" href="../favicon.ico">
-    <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="manifest" href="manifest.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
@@ -19,6 +19,7 @@
           </picture>
         </a>
         <a class="main-header__logo-title" href="index.html">
+          <source media="(min-width: 1440px)" srcset="img/logotype-desktop-title.svg">
           <img class="main-header__logo-image-title" src="img/logotype-mobile-title.svg" width="101" height="18" alt="Cat Energy">
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -52,12 +53,14 @@
       <section class="program-selection">
         <div class="program-selection__wrapper">
           <div class="program-selection__general-slogan">
-            <h2 class="program-selection__title">
-              Функциональное<br>питание для котов
-            </h2>
-            <p class="program-selection__slogan">
-              Занялся собой? Займись котом!
-            </p>
+            <div class="program-selection__general-slogan-wrapper">
+              <h2 class="program-selection__title">
+                Функциональное<br>питание для котов
+              </h2>
+              <p class="program-selection__slogan">
+                Занялся собой? Займись котом!
+              </p>
+            </div>
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/program-selection-image-desktop.webp 1x, img/program-selection-image-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/program-selection-image-tablet.webp 1x, img/program-selection-image-tablet@2x.webp 2x">
@@ -65,38 +68,37 @@
 
               <source media="(min-width: 1440px)" srcset="img/program-selection-image-desktop.png 1x, img/program-selection-image-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/program-selection-image-tablet.png 1x, img/program-selection-image-tablet@2x.png 2x">
-              <img class="program-selection__image" src="img/program-selection-image-mobile.png" srcset="img/program-selection-image-mobile@2x.png 2x" width="280px" height="270px" alt="Изображение товара">
+              <img class="program-selection__image" src="img/program-selection-image-mobile.png" srcset="img/program-selection-image-mobile@2x.png 2x" width="280" height="270" alt="Изображение товара">
             </picture>
             <button class="program-selection__button button" type="button">
               Подобрать программу
             </button>
           </div>
 
-          <dl class="program-selection__list">
-            <div class="program-selection__item">
-              <dt class="program-selection__target program-selection__target--slim">
+          <ul class="program-selection__list">
+            <li class="program-selection__item">
+              <p class="program-selection__target program-selection__target--slim">
                 Похудение
-              </dt>
-              <dd class="program-selection__problem">
+              </p>
+              <p class="program-selection__problem">
                 Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-              </dd>
-              <button class="program-selection__button-target" type="button">
+              </p>
+              <a class="program-selection__button-target" href="#">
                 Каталог slim
-                <svg class="program-selection__button-icon" width="24" height="12" viewBox="0 0 24 12" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="2" d="M0 6h18"/><path d="m24 6-6.75 5.1962V.803848L24 6Z" fill="#000"/></svg>
-              </button>
-            </div>
-            <div class="program-selection__item">
-              <dt class="program-selection__target program-selection__target--weight">
+              </a>
+            </li>
+            <li class="program-selection__item">
+              <p class="program-selection__target program-selection__target--weight">
                 Набор массы
-              </dt>
-              <dd class="program-selection__problem">
-                Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!            </dd>
-              <button class="program-selection__button-target" type="button">
+              </p>
+              <p class="program-selection__problem">
+                Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+              </p>
+              <a class="program-selection__button-target" href="#">
                 Каталог pro
-                <svg class="program-selection__button-icon" width="24" height="12" viewBox="0 0 24 12" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="2" d="M0 6h18"/><path d="m24 6-6.75 5.1962V.803848L24 6Z" fill="#000"/></svg>
-              </button>
-            </div>
-          </dl>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -106,16 +108,16 @@
           <p class="principle__description">Как это работает</p>
           <ul class="principle__list">
             <li class="principle__item">
-              <p class="principle__description-item principle__description-item--nutrients">Функциональное питание содержит только полезные питательные вещества.</p>
+              <p class="principle__description-item principle__description-item--nutrients">Функциональное питание <br>содержит только полезные <br>питательные вещества.</p>
             </li>
             <li class="principle__item">
-              <p class="principle__description-item principle__description-item--easy">Выпускается в виде порошка,который нужно лишь залить кипятком и готово.</p>
+              <p class="principle__description-item principle__description-item--easy">Выпускается в виде порошка, <br>который нужно лишь залить <br>кипятком и готово.</p>
             </li>
             <li class="principle__item">
-              <p class="principle__description-item principle__description-item--replace-meals">Замените один-два приема обычной еды на наше функциональное питание.</p>
+              <p class="principle__description-item principle__description-item--replace-meals">Замените один-два приема <br>обычной еды на наше <br>функциональное питание.</p>
             </li>
             <li class="principle__item">
-              <p class="principle__description-item principle__description-item--fast">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="principle__description-item principle__description-item--fast">Уже через месяц наслаждайтесь<span> изменениями к лучшему</span> вашего питомца!</p>
             </li>
           </ul>
         </div>
@@ -127,9 +129,11 @@
           <div class="example__result-total-wrapper">
             <div class="example__result-wrapper">
               <p class="example__result">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-              <p class="example__result-total">5 КГ<span class="example__note">снижение веса</span></p>
-              <p class="example__result-total example__result-total-day">60 ДНЕЙ<span class="example__note">затрачено времени</span></p>
-              <p class="example__result-cost">Затраты на питание: 15 000 РУБ.</p>
+              <div class="example__total-wrapper">
+                <p class="example__result-total">5 КГ<span class="example__note">снижение веса</span></p>
+                <p class="example__result-total example__result-total-day">60 ДНЕЙ<span class="example__note">затрачено времени</span></p>
+              </div>
+              <p class="example__result-cost">Затраты на питание: <span>15 000 РУБ.</span></p>
             </div>
             <div class="example__list slider__list">
               <div class="example__item slider__item">

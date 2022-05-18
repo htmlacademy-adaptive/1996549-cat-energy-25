@@ -19,6 +19,7 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 58px 30px 55px;
@@ -32,11 +33,19 @@
 .main-footer__logo-link {
   text-align: center;
   display: block;
-  padding-bottom: 32px;
+  padding-bottom: 29px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
     border: none;
     padding: 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

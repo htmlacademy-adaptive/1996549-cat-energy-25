@@ -5,7 +5,7 @@
     <title>Подбор программы</title>
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" sizes="32x32" href="../favicon.ico">
-    <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="manifest" href="manifest.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
@@ -61,13 +61,13 @@
             <div class="program__filter-info-wrapper">
               <p class="program__field-group program__form-name-cat">
                 <span class="program__label">
-                  <label class="program__label" for="form-name-cat">ИМЯ:<sup class="programm__label-star">*<sup></label>
+                  <label class="program__label" for="form-name-cat">ИМЯ:*</label>
                 </span>
                 <input class="program__field-name-cat program__field" type="text" id="form-name-cat" name="form-name-cat" placeholder="БАРСИК" required>
               </p>
               <p class="program__field-group program__form-weight-cat">
                 <span class="program__label">
-                  <label class="program__label" for="form-weight-cat">ВЕС (КГ):<sup class="programm__label-star">*<sup></label>
+                  <label class="program__label" for="form-weight-cat">ВЕС (КГ):*</label>
                 </span>
                 <input class="program__field-weight-cat program__field" type="text" id="form-weight-cat" name="form-weight-cat" placeholder="7" required>
               </p>
@@ -99,7 +99,7 @@
                   <label class="program__filter-control">
                     <input class="visually-hidden program__filter-control-input" type="radio" name="program-aim" value="recomendation">
                     <span class="program__control-mark"></span>
-                    <span class="program__control-label">Похудение</span>
+                    <span class="program__control-label">Не знаю (Нужен ваш совет)</span>
                   </label>
                 </li>
               </ul>
@@ -108,24 +108,26 @@
 
           <div class="program__field-group program__contacts">
             <span class="program__field-group-title program__field-group-title--line">Контактные данные (владельца кота)</span>
-            <p class="program__field-group program__contacts-email">
-              <span class="program__label">
-                <label class="program__label" for="form-email">E-MAIL:<sup class="programm__label-star">*</sup></label>
-              </span>
-              <input class="program__field-email program__field" type="email" id="form-email" name="form-email" placeholder="kuklachev@gmail.com">
-              <svg class="program__contacts-email-icon" width="18" height="13">
-                <use href="img/sprite.svg#envelope"></use>
-              </svg>
-            </p>
-            <p class="program__field-group program__contacts-tel">
-              <span class="program__label">
-                <label class="program__label" for="form-tel">Телефон:<sup class="programm__label-star">*</sup></label>
-              </span>
-              <input class="program__field-tel program__field" type="tel" id="form-tel" name="form-tel" placeholder="8 (960) 900-60-90">
-              <svg class="program__contacts-telefone-icon" width="20" height="21">
-                <use href="img/sprite.svg#telephone"></use>
-              </svg>
-            </p>
+            <div class="program__contacts-wrapper">
+              <p class="program__field-group program__contacts-email">
+                <span class="program__label">
+                  <label class="program__label" for="form-email">E-MAIL:*</label>
+                </span>
+                <input class="program__field-email program__field" type="email" id="form-email" name="form-email" placeholder="kuklachev@gmail.com">
+                <svg class="program__contacts-email-icon" width="18" height="14">
+                  <use href="img/sprite.svg#envelope"></use>
+                </svg>
+              </p>
+              <p class="program__field-group program__contacts-tel">
+                <span class="program__label">
+                  <label class="program__label" for="form-tel">Телефон:*</label>
+                </span>
+                <input class="program__field-tel program__field" type="tel" id="form-tel" name="form-tel" pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" placeholder="8 (960) 900-60-90">
+                <svg class="program__contacts-telefone-icon" width="20" height="21">
+                  <use href="img/sprite.svg#telephone"></use>
+                </svg>
+              </p>
+            </div>
           </div>
 
           <p class="program__field-group program__comment">
@@ -167,7 +169,7 @@
             </ul>
             <div class="program__button-wrapper">
               <button class="program__button button" type="submit">Отправить заявку</button>
-              <span class="program__note"><sup class="programm__label-star">*</sup> — Обязательные поля</span>
+              <span class="program__note">* — Обязательные поля</span>
             </div>
           </fieldset>
 

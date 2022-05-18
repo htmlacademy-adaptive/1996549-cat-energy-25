@@ -1,13 +1,6 @@
 .program-selection__wrapper {
   width: 320px;
-  background-image: url("../img/program-selection-bg-image-mobile.jpg");
-  background-repeat: no-repeat;
   margin: 0 auto;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/program-selection-bg-image-mobile@2x.jpg");
-    background-size: 320px 302px;
-  }
 
   @media (min-width: @tablet-width) {
     width: 708px;
@@ -34,6 +27,28 @@
   }
 }
 
+.program-selection__general-slogan-wrapper {
+  background-image: url("../img/program-selection-bg-image-mobile.jpg");
+  background-repeat: no-repeat;
+  background-color: #68b738;
+  min-height: 301px;
+  width: 320px;
+  margin-top: 2px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/program-selection-bg-image-mobile@2x.jpg");
+    background-size: 320px 302px;
+  }
+
+  @media (min-width: @tablet-width) {
+    background: none;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    min-height: auto;
+  }
+}
+
 .program-selection__general-slogan {
   display: flex;
   flex-direction: column;
@@ -46,7 +61,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 582px;
+    min-height: 555px;
   }
 }
 
@@ -56,6 +71,8 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  padding: 0 20px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     color: #000000;
@@ -63,12 +80,15 @@
     line-height: 60px;
     margin-top: 62px;
     margin-bottom: 41px;
-    margin-left: 89px;
+    margin-left: 86px;
+    text-align: left;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 180px;
-    margin-left: 80px;
+    margin-top: 220px;
+    margin-left: 76px;
+    text-align: left;
   }
 }
 
@@ -80,6 +100,8 @@
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 29px;
+  padding: 0 20px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     color: #000000;
@@ -87,17 +109,23 @@
     line-height: 20px;
     margin-bottom: 49px;
     margin-left: 89px;
+    text-align: left;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 52px;
+    text-align: left;
+    margin-left: 78px;
   }
 }
 
 .program-selection__button {
+  margin-bottom: 20px;
+
   @media (min-width: @tablet-width) {
     width: 244px;
-    padding: 14px 10px;
+    padding: 17px 10px;
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 526px;
@@ -107,25 +135,27 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
+    margin-left: 77px;
   }
 }
 
 .program-selection__image {
-  margin-bottom: 3px;
+  margin-bottom: -1px;
+  margin-top: -132px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
     margin: 0;
     width: 709px;
     height: 609px;
-    top: 204px;
+    top: 200px;
   }
 
   @media (min-width: @desktop-width) {
     width: 552px;
     height: 499px;
-    top: -50px;
-    right: 200px;
+    top: -80px;
+    right: 223px;
   }
 }
 
@@ -140,6 +170,7 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     width: 1220px;
     margin-right: 110px;
   }
@@ -147,14 +178,14 @@
 
 .program-selection__item {
   margin: 0 20px;
-  margin-top: 20px;
   background-color: #f2f2f2;
   padding: 20px;
-  padding-top: 30px;
+  padding-top: 31px;
   padding-bottom: 0;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 77px 52px 28px;
+    padding: 79px 52px 33px;
     width: 708px;
     box-sizing: border-box;
     margin: 0;
@@ -170,7 +201,7 @@
   }
 }
 
-.program-selection__item:last-child {
+.program-selection__item:nth-child(2n) {
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
@@ -186,9 +217,11 @@
 .program-selection__target {
   position: relative;
   color: #000000;
+  text-transform: uppercase;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
+  margin: 0;
   margin-left: 71px;
   margin-bottom: 29px;
 
@@ -204,6 +237,7 @@
 
     @media (min-width: @tablet-width) {
       background-image: url("../img/slim-image_tab.svg");
+      background-repeat: no-repeat;
       width: 200px;
       height: 211px;
       top: 0;
@@ -212,6 +246,7 @@
 
     @media (min-width: @desktop-width) {
       background-image: url("../img/slim-image_desk.svg");
+      background-repeat: no-repeat;
       width: 100px;
       height: 106px;
       top: -36px;
@@ -231,18 +266,20 @@
 
     @media (min-width: @tablet-width) {
       background-image: url("../img/weight-image_tab.svg");
+      background-repeat: no-repeat;
       width: 268px;
       height: 200px;
-      top: 0;
-      left: 350px;
+      top: 13px;
+      left: 360px;
     }
 
     @media (min-width: @desktop-width) {
       background-image: url("../img/weight-image_desk.svg");
+      background-repeat: no-repeat;
       width: 134px;
       height: 100px;
-      top: -36px;
-      left: -181px;
+      top: -31px;
+      left: -183px;
     }
   }
 
@@ -267,23 +304,27 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
     width: 340px;
+    border: none;
   }
 
   @media (min-width: @desktop-width) {
-    width: auto;
-    padding-bottom: 16px;
+    min-width: 467px;
+    padding-bottom: 25px;
   }
 }
 
 .program-selection__button-target {
+  position: relative;
+  display: block;
   padding: 19px;
   padding-left: 0;
-  width: 240px;
+  width: 150px;
   font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
   font-size: 16px;
@@ -291,10 +332,10 @@
   font-weight: 400;
   text-align: left;
   text-transform: uppercase;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  border-top: 1px solid #b9b9b9;
+  text-decoration: none;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 100px 50%;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -302,10 +343,20 @@
     border: none;
     padding: 25px;
     padding-left: 0;
+    background-position: 131px 50%;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 7px;
+    padding: 0;
+    width: 200px;
+  }
+
+  &:hover {
+    background-image: url("../img/arrow-hover.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

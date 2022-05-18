@@ -1,6 +1,7 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-top: 22px;
 
   @media (min-width: @tablet-width) {
@@ -20,11 +21,24 @@
 
   @media (min-width: @tablet-width) {
     display: inline-block;
-    margin-right: 22px;
+    margin-right: 25px;
     padding: 0;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 .copyright__link {
   fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    fill: #68b738;
+    opacity: 0.3;
+  }
 }

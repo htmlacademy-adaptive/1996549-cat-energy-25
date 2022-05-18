@@ -4,6 +4,7 @@
 
   @media (min-width: @tablet-width) {
     width: 708px;
+    margin-bottom: -13px;
   }
 
   @media (min-width: @desktop-width) {
@@ -16,28 +17,34 @@
 
 .present__wrapper {
   min-height: 289px;
-  background-image:
-    linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../../img/present-bg.jpg");
+  background-image: url("../img/present-bg-mobile.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/present-bg-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     min-height: 199px;
-    background-image:
-      linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../../img/present-bg-tab.jpg");
+    background-image: url("../img/present-bg-tablet.jpg");
     background-repeat: no-repeat, no-repeat;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/present-bg-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     min-height: 289px;
-    background-image:
-      linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../../img/present-bg.jpg");
+    background-image: url("../img/present-bg-desktop.jpg");
     background-repeat: no-repeat, no-repeat;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/present-bg-desktop@2x.jpg");
+    }
   }
 }
 
