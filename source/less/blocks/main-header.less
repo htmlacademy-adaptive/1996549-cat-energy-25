@@ -3,7 +3,7 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
+    width: 768px;
   }
 
   @media (min-width: @desktop-width) {
@@ -30,11 +30,13 @@
     margin: 0;
     padding: 0 30px;
     justify-content: start;
+    align-items: flex-start;
     min-height: 78px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0 110px;
+    padding-top: 30px;
   }
 }
 
@@ -47,9 +49,25 @@
   @media (min-width: @desktop-width) {
     margin-right: 14px;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-header__logo-image-title {
+  @media (min-width: @desktop-width) {
+    width: 117px;
+    height: 21px;
+  }
 }
 
 .main-header__logo-title {
+  margin-top: 5px;
   margin-right: 89px;
 
   @media (min-width: @tablet-width) {
@@ -59,6 +77,15 @@
 
   @media (min-width: @desktop-width) {
     margin-right: auto;
+    margin-top: 46px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 

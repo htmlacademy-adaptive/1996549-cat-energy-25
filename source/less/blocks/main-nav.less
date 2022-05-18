@@ -27,6 +27,7 @@
   background-color: #ffffff;
   cursor: pointer;
   border: none;
+  margin-top: 3px;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -34,6 +35,14 @@
 
   @media (min-width: @desktop-width) {
     display: none;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -101,126 +110,10 @@
 
   &:active::before,
   &:active::after {
-    background-color: fade(#ffffff, 30%);
+    background-color: fade(#000000, 30%);
   }
 }
 
-.site-list {
-  .list-style();
-
-  &:first-child {
-    border-top: 1px solid #e6e6e6;
-
-    @media (min-width: @tablet-width) {
-      border: none;
-      margin-top: 42px;
-    }
-  }
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    border: none;
-    width: 440px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: auto;
-  }
-}
-
-.site-list__item {
-  padding: 0;
-
-  @media (min-width: @tablet-width) {
-    margin-right: 34px;
-  }
-
-  &:last-child {
-    margin: 0;
-  }
-
-  &--active {
-    position: relative;
-
-    @media (min-width: @tablet-width) {
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: -10px;
-        left: 0;
-        height: 2px;
-        background-color: #68b738;
-      }
-    }
-  }
-}
-
-.site-list__item--index-active {
-  position: relative;
-
-  &::after {
-    @media (min-width: @tablet-width) {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: -10px;
-      left: 0;
-      height: 2px;
-      background-color: #68b738;
-    }
-
-    @media (min-width: @desktop-width) {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: -10px;
-      left: 0;
-      height: 2px;
-      background-color: #ffffff;
-    }
-  }
-}
-
-.site-list__link {
-  width: 290px;
-  color: #000000;
-  background-color: #ffffff;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 500;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  display: block;
-  margin: 0;
-  padding: 22px 15px 24px;
-  border-bottom: 1px solid #e6e6e6;
-
-  @media (min-width: @tablet-width) {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
-    padding: 0;
-    border: none;
-    width: auto;
-  }
-
-  @media (min-width: @desktop-width) {
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 400;
-    color: #000000;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-  }
-}
-
-.site-list__link--index {
-  @media (min-width: @desktop-width) {
-    color: #ffffff;
-  }
+.main-nav--closed .site-list:first-child {
+  border: none;
 }
