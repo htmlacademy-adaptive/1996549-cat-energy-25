@@ -52,6 +52,8 @@
 }
 
 .product-card__title {
+  display: block;
+  text-decoration: none;
   margin: 0;
   margin-top: 19px;
   margin-right: 10px;
@@ -71,10 +73,14 @@
     margin-top: 141px;
     width: 154px;
   }
-}
 
-.product-card__title br {
-  display: none;
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product-card__list {
@@ -127,6 +133,10 @@
 }
 
 .product-card__button {
+  box-sizing: border-box;
+  text-decoration: none;
+  display: block;
+  text-align: center;
   font-size: 16px;
   line-height: 20px;
 

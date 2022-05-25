@@ -75,7 +75,7 @@
       content: "";
       position: absolute;
       right: 0;
-      bottom: 7px;
+      bottom: 4px;
       left: 0;
       height: 2px;
       background-color: #ffffff;
@@ -127,5 +127,27 @@
 .site-list__link--index {
   @media (min-width: @desktop-width) {
     color: #ffffff;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+}
+
+.main-nav--closed .site-list:first-child {
+  border: none;
+}
+
+.main-nav--nojs * .site-list:first-child {
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: @tablet-width) {
+    border: none;
   }
 }

@@ -65,8 +65,8 @@
 
 .program__control-mark {
   position: absolute;
-  top: -25%;
-  left: -45px;
+  top: -15%;
+  left: -47px;
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;
@@ -81,6 +81,14 @@
 
 .program__filter-control:hover .program__control-mark {
   border: 1px solid #bababa;
+}
+
+.program__filter-control:active .program__control-mark {
+  border: 1px solid #68b738;
+}
+
+.program__filter-control:focus-within .program__control-mark {
+  border: 1px solid #68b738;
 }
 
 .program__filter-control-input:disabled + .program__control-mark {
@@ -193,6 +201,11 @@
   @media (min-width: @tablet-width) {
     bottom: 40px;
   }
+
+  @media (min-width: @desktop-width) {
+    bottom: 37px;
+    right: 21px;
+  }
 }
 
 .program__field-email {
@@ -293,16 +306,11 @@
 
 .program__label {
   text-transform: uppercase;
-  margin-right: 4px;
+  margin-right: 2px;
 
   @media (min-width: @desktop-width) {
     margin-right: 1px;
   }
-}
-
-.programm__label-star {
-  font-size: inherit;
-  font-family: "Oswald", "Arial", sans-serif;
 }
 
 .program__field {
@@ -314,7 +322,7 @@
   line-height: 18px;
   font-weight: 400;
   padding: 14px;
-  padding-left: 11px;
+  padding-left: 16px;
   margin-left: 7px;
   border: 1px solid #e7e7e7;
 
@@ -334,7 +342,7 @@
   }
 
   &:focus {
-    border: 2px solid #444444;
+    border: 1px solid #444444;
     outline: none;
   }
 }
