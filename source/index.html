@@ -6,6 +6,8 @@
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" sizes="32x32" href="../favicon.ico">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
@@ -19,8 +21,10 @@
           </picture>
         </a>
         <a class="main-header__logo-title" href="index.html">
-          <source media="(min-width: 1440px)" srcset="img/logotype-desktop-title.svg">
-          <img class="main-header__logo-image-title" src="img/logotype-mobile-title.svg" width="101" height="18" alt="Cat Energy">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logotype-desktop-title.svg">
+            <img class="main-header__logo-image-title" src="img/logotype-mobile-title.svg" width="101" height="18" alt="Cat Energy">
+          </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -70,9 +74,9 @@
               <source media="(min-width: 768px)" srcset="img/program-selection-image-tablet.png 1x, img/program-selection-image-tablet@2x.png 2x">
               <img class="program-selection__image" src="img/program-selection-image-mobile.png" srcset="img/program-selection-image-mobile@2x.png 2x" width="280" height="270" alt="Изображение товара">
             </picture>
-            <button class="program-selection__button button" type="button">
+            <a class="program-selection__button button" href="form.html">
               Подобрать программу
-            </button>
+            </a>
           </div>
 
           <ul class="program-selection__list">
@@ -124,35 +128,37 @@
       </section>
 
       <section class="example">
+        <h2 class="example__title">Живой пример</h2>
         <div class="example__wrapper slider">
-          <h2 class="example__title">Живой пример</h2>
-          <div class="example__result-total-wrapper">
-            <div class="example__result-wrapper">
-              <p class="example__result">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-              <div class="example__total-wrapper">
-                <p class="example__result-total">5 КГ<span class="example__note">снижение веса</span></p>
-                <p class="example__result-total example__result-total-day">60 ДНЕЙ<span class="example__note">затрачено времени</span></p>
+          <div class="example__result-total-group">
+            <div class="example__result-total-wrapper">
+              <div class="example__result-wrapper">
+                <p class="example__result">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+                <div class="example__total-wrapper">
+                  <p class="example__result-total">5 КГ<span class="example__note">снижение веса</span></p>
+                  <p class="example__result-total example__result-total-day">60 ДНЕЙ<span class="example__note">затрачено времени</span></p>
+                </div>
+                <p class="example__result-cost">Затраты на питание: <span>15 000 РУБ.</span></p>
               </div>
-              <p class="example__result-cost">Затраты на питание: <span>15 000 РУБ.</span></p>
-            </div>
-            <div class="example__list slider__list">
-              <div class="example__item slider__item">
-                <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-before-after-tablet.webp 1x, img/photo-before-after-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-before-mobile.webp 1x, img/photo-before-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 768px)" srcset="img/photo-before-after-tablet.png 1x, img/photo-before-after-tablet@2x.png 2x">
-                  <img class="example__photo" src="img/photo-before-mobile.png" srcset="img/photo-before-mobile@2x.png" width="280" height="232" alt="Фотография кота до">
-                </picture>
+              <div class="example__list slider__list">
+                <div class="example__item slider__item">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-before-after-tablet.webp 1x, img/photo-before-after-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-before-mobile.webp 1x, img/photo-before-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-before-after-tablet.png 1x, img/photo-before-after-tablet@2x.png 2x">
+                    <img class="example__photo" src="img/photo-before-mobile.png" srcset="img/photo-before-mobile@2x.png" width="280" height="232" alt="Фотография кота до">
+                  </picture>
+                </div>
+                <div class="example__item slider__item">
+                  <img class="example__photo-after" src="img/photo-after-mobile.png" width="243" height="232" alt="Фотография кота после">
+                </div>
+                <div class="example__reviews-toggles slider__toggles">
+                  <button class="slider__toggle slider__toggle--current" type="button">Было</button>
+                  <div class="slider__range"></div>
+                  <button class="slider__toggle-before-after" type="button"><span class="visually-hidden">Переключатель было/стало</span></button>
+                  <button class="slider__toggle" type="button">Стало</button>
+                </div>
               </div>
-              <div class="example__item slider__item">
-                <img class="example__photo-after" src="img/photo-after-mobile.png" width="243" height="232" alt="Фотография кота после">
-              </div>
-              <p class="reviews__toggles slider__toggles">
-                <button class="slider__toggle slider__toggle--current" type="button">Было</button>
-                <button class="slider__toggle-before-after" type="button"><span class="visually-hidden">Переключатель было/стало</span></button>
-                <button class="slider__toggle" type="button">Стало</button>
-              </p>
             </div>
           </div>
         </div>
@@ -164,16 +170,8 @@
             <p class="contacts__invite">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
             <address class="contacts__address">ул. Большая<br>Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
           </div>
-          <div class="contacts__map">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
-
-              <source media="(min-width: 1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
-              <img class="contacts__map-image" src="img/map-mobile.png" srcset="img/map-mobile@2x.png" width="320" height="362" alt="Карта с нашим местонахождением">
-            </picture>
+          <div class="contacts__map-wrapper">
+            <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A335b004f319e9695801c874bab8ff21429add64b5e821a0a55b06ed53e3b35f2&amp;source=constructor" width="320" height="400"></iframe>
           </div>
         </div>
       </section>

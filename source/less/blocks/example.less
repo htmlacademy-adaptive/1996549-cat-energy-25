@@ -9,7 +9,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1440px;
+    width: 100%;
   }
 }
 
@@ -23,14 +23,27 @@
 
   @media (min-width: @desktop-width) {
     padding: 0;
+    background-color: #eaeaea;
+  }
+}
+
+.example__result-total-group {
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
 .example__result-total-wrapper {
+  padding-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
+
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #eaeaea;
     padding: 71px 76px 13px;
   }
 }
@@ -62,7 +75,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 19px 77px 77px;
+    width: 1220px;
+    margin: 0 auto;
+    padding: 19px 77px 77px;
   }
 }
 
